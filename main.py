@@ -4,7 +4,7 @@ import requests
 
 # This code uses Streamlit to create a simple web form where users can submit their video ideas. When submitted, the data is sent to a webhook using a POST request.
 def post_to_webhook(**data): #this function sends data to a webhook URL - **data = accepts any number of keyword arguments
-    webhook_url = "https://hook.eu2.make.com/cb4he7mmqbjrit825pnxtfixtpvkd9wo"
+    webhook_url = "" #Paste your webhook URL obtained from the 'Create a webhook' module in Make.com.
     if webhook_url:
         response = requests.post(webhook_url, json=data) #sends a POST requests to the url with the data in JSON format
         return response
